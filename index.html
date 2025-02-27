@@ -3,10 +3,260 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mini Project Revou</title>
-   </head>
+      <title>Matapsa - Your Trusted Travel Agent</title>
 
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/styles.css" />
+   </head>
    <body>
-      <p>test halo!!!</p>
+      <header>
+         <div class="container">
+            <div class="header-content">
+               <div class="logo">matapsa</div>
+               <nav>
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Our Package</a></li>
+                     <li><a href="#" class="active">Call Us</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+
+      <div class="container">
+         <div class="hero">
+            <h1>Your Trusted Travel Agent's</h1>
+            <p>Your <span>happiness</span> is our happiness</p>
+         </div>
+
+         <!-- Banner Slider -->
+         <div class="banner-slider">
+            <div class="slides">
+               <div class="slide slide-1">
+                  <div class="slide-content">
+                     <h2>Explore Bali</h2>
+                     <p>
+                        Experience the beauty and culture of Bali with our
+                        exclusive packages
+                     </p>
+                  </div>
+               </div>
+               <div class="slide slide-2">
+                  <div class="slide-content">
+                     <h2>Discover Japan</h2>
+                     <p>
+                        Immerse yourself in the rich traditions and modern
+                        wonders of Japan
+                     </p>
+                  </div>
+               </div>
+               <div class="slide slide-3">
+                  <div class="slide-content">
+                     <h2>Adventure in Singapore</h2>
+                     <p>
+                        Find the perfect balance of urban exploration and
+                        natural beauty
+                     </p>
+                  </div>
+               </div>
+               <div class="slide slide-4">
+                  <div class="slide-content">
+                     <h2>Escape to Bandung</h2>
+                     <p>
+                        Enjoy the cool mountain climate and picturesque
+                        landscapes
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="navigation-dots">
+               <div class="dot active" data-slide="0"></div>
+               <div class="dot" data-slide="1"></div>
+               <div class="dot" data-slide="2"></div>
+               <div class="dot" data-slide="3"></div>
+            </div>
+         </div>
+
+         <div class="main-content">
+            <div class="left-column">
+               <div class="image-container">
+                  <div class="image-placeholder"></div>
+                  <div class="caption">
+                     Liburan jadi menyenangkan bersama Travel Agents!
+                  </div>
+               </div>
+
+               <div class="agent-info">
+                  <div class="agent-avatar">FH</div>
+                  <div class="agent-details">
+                     <h4>Florence Hughes</h4>
+                     <p>San Rafael, Oregon, CA</p>
+                  </div>
+               </div>
+
+               <div class="info-box">
+                  <p>
+                     Use this space to provide users with more information about
+                     your offer. Consider it a follow-up to your headline and
+                     explain the benefits of your service or product.
+                  </p>
+
+                  <div class="benefits">
+                     <div class="benefit-item">
+                        <div class="number">1</div>
+                        <div class="benefit-text">
+                           Your first feature, written in the form of a benefit
+                           statement.
+                        </div>
+                     </div>
+                     <div class="benefit-item">
+                        <div class="number">2</div>
+                        <div class="benefit-text">
+                           Your second feature, written in the form of a benefit
+                           statement.
+                        </div>
+                     </div>
+                     <div class="benefit-item">
+                        <div class="number">3</div>
+                        <div class="benefit-text">
+                           Your third feature, written in the form of a benefit
+                           statement.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="right-column">
+               <div class="contact-form">
+                  <h3>Contact Us</h3>
+                  <p>
+                     Jalan which road? nomor rumah 123 gang sebelah ditanyain
+                     dulu
+                  </p>
+
+                  <form id="contactForm">
+                     <div class="form-group" id="nameGroup">
+                        <label>Your Name:</label>
+                        <input
+                           type="text"
+                           id="name"
+                           placeholder="First and last name"
+                        />
+                        <div class="error-message">
+                           Please enter your full name
+                        </div>
+                     </div>
+                     <div class="form-group" id="emailGroup">
+                        <label>Email Address:</label>
+                        <input
+                           type="email"
+                           id="email"
+                           placeholder="example@domain.com"
+                        />
+                        <div class="error-message">
+                           Please enter a valid email address
+                        </div>
+                     </div>
+                     <div class="form-group" id="interestGroup">
+                        <label>What are you interested in?</label>
+                        <select id="interest">
+                           <option value="">Select option</option>
+                           <option value="bali">Bali</option>
+                           <option value="japan">Japan</option>
+                           <option value="singapore">Singapore</option>
+                           <option value="bandung">Bandung</option>
+                           <option value="surabaya">Surabaya</option>
+                        </select>
+                        <div class="error-message">Please select an option</div>
+                     </div>
+                     <button type="submit" class="btn">SEND</button>
+                     <div class="form-success">
+                        Thank you for your message! We'll contact you soon.
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="packages">
+         <div class="container">
+            <h2>Our Package</h2>
+            <div class="package-grid">
+               <div class="package-card">
+                  <div class="package-icon">✈️</div>
+                  <div class="package-title">Bali</div>
+                  <div class="package-description">
+                     Travel destination of Bali, lombok island (location not
+                     found). You can beach there.
+                  </div>
+               </div>
+               <div class="package-card">
+                  <div class="package-icon">🗼</div>
+                  <div class="package-title">Japan</div>
+                  <div class="package-description">
+                     Travel destination of Japan. Lorem ipsum (location not
+                     found). You can temple there.
+                  </div>
+               </div>
+               <div class="package-card">
+                  <div class="package-icon">🌆</div>
+                  <div class="package-title">Singapore</div>
+                  <div class="package-description">
+                     This description suggests and reminds you to take parks.
+                  </div>
+               </div>
+               <div class="package-card">
+                  <div class="package-icon">🏞️</div>
+                  <div class="package-title">Bandung</div>
+                  <div class="package-description">
+                     This description suggests and reminds you to take parks.
+                  </div>
+               </div>
+               <div class="package-card">
+                  <div class="package-icon">🏙️</div>
+                  <div class="package-title">Surabaya</div>
+                  <div class="package-description">
+                     This description suggests and reminds you to take above.
+                  </div>
+               </div>
+               <div class="package-card">
+                  <div class="package-icon">🌟</div>
+                  <div class="package-title">Third Feature</div>
+                  <div class="package-description">
+                     This description suggests and reminds you to take above.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="closing">
+         <div class="container">
+            <h2>Your Closing Argument Headline</h2>
+            <p>
+               Suspendisse egetas Florence drive to Manhattan-Avenue, lorem
+               ipsum indolent and patirubam. Gravitas, minabdu cloads. Possible,
+               brights odds cat urgg, Finglish.
+            </p>
+            <button class="cta-btn">CALL TO ACTION</button>
+         </div>
+      </div>
+
+      <footer>
+         <div class="container">
+            <div class="footer-logo">matapsa</div>
+            <div class="footer-links">
+               <a href="#">Terms of Service</a>
+               <a href="#">Privacy Policy</a>
+               <span>© 2019 - Matapsa</span>
+            </div>
+         </div>
+      </footer>
+
+      <!-- JavaScript -->
+      <script src="js/script.js"></script>
    </body>
 </html>
