@@ -1,54 +1,56 @@
  // Banner Slider Script
  document.addEventListener('DOMContentLoaded', function() {
-    let currentSlide = 0;
     const slides = document.querySelector('.slides');
     const dots = document.querySelectorAll('.dot');
-    const slideCount = dots.length;
-    let slideInterval;
-
-    // Function to update slider position
+    const leftArrow = document.querySelector('.arrow-left');
+    const rightArrow = document.querySelector('.arrow-right');
+    let currentSlide = 0;
+    
+    // Function to update the slider position
     function updateSlider() {
-        slides.style.transform = `translateX(-${currentSlide * 25}%)`;
-        // Update active dot
-        dots.forEach((dot, index) => {
-            if (index === currentSlide) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
+      slides.style.transform = `translateX(-${currentSlide * 25}%)`;
+      
+      // Update active dot
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+      });
     }
-
-    // Start automatic sliding
-    function startSlider() {
-        slideInterval = setInterval(() => {
-            currentSlide = (currentSlide + 1) % slideCount;
-            updateSlider();
-        }, 5000); // Change slide every 5 seconds
-    }
-
+    
     // Add click events to dots
-    dots.forEach(dot => {
-        dot.addEventListener('click', function() {
-            currentSlide = parseInt(this.getAttribute('data-slide'));
-            updateSlider();
-            // Reset interval when manually changing slide
-            clearInterval(slideInterval);
-            startSlider();
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+        currentSlide = index;
+        updateSlider();
+      });
+    });
+    
+    // Add click events to arrows
+    leftArrow.addEventListener('click', function() {
+      currentSlide = (currentSlide - 1 + 4) % 4;
+      updateSlider();
+    });
+    
+    rightArrow.addEventListener('click', function() {
+      currentSlide = (currentSlide + 1) % 4;
+      updateSlider();
+    });
+    
+    // Auto slide every 5 seconds
+    setInterval(function() {
+      currentSlide = (currentSlide + 1) % 4;
+      updateSlider();
+    }, 5000);
+     // JavaScript for smooth scrolling 
+    
+     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
 
-    // Initialize slider
-    startSlider();
-
-    // Pause slider on hover
-    const bannerSlider = document.querySelector('.banner-slider');
-    bannerSlider.addEventListener('mouseenter', () => {
-        clearInterval(slideInterval);
-    });
-    bannerSlider.addEventListener('mouseleave', () => {
-        startSlider();
-    });
 
     // Form Validation Script
     const contactForm = document.getElementById('contactForm');

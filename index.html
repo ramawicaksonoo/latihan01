@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Matapsa - Your Trusted Travel Agent</title>
+      <title>Traveloka - Best Travel Agent</title>
 
       <!-- CSS -->
       <link rel="stylesheet" href="css/styles.css" />
@@ -12,246 +12,311 @@
       <header>
          <div class="container">
             <div class="header-content">
-               <div class="logo">matapsa</div>
+               <div class="logo">Traveloka</div>
                <nav>
                   <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Our Package</a></li>
-                     <li><a href="#" class="active">Call Us</a></li>
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#packages">Our Package</a></li>
+                     <li><a href="#call-action">Call Us</a></li>
                   </ul>
                </nav>
             </div>
          </div>
       </header>
 
-      <div class="container">
-         <div class="hero">
-            <h1>Your Trusted Travel Agent's</h1>
-            <p>Your <span>happiness</span> is our happiness</p>
-         </div>
-
-         <!-- Banner Slider -->
-         <div class="banner-slider">
-            <div class="slides">
-               <div class="slide slide-1">
-                  <div class="slide-content">
-                     <h2>Explore Bali</h2>
-                     <p>
-                        Experience the beauty and culture of Bali with our
-                        exclusive packages
-                     </p>
-                  </div>
-               </div>
-               <div class="slide slide-2">
-                  <div class="slide-content">
-                     <h2>Discover Japan</h2>
-                     <p>
-                        Immerse yourself in the rich traditions and modern
-                        wonders of Japan
-                     </p>
-                  </div>
-               </div>
-               <div class="slide slide-3">
-                  <div class="slide-content">
-                     <h2>Adventure in Singapore</h2>
-                     <p>
-                        Find the perfect balance of urban exploration and
-                        natural beauty
-                     </p>
-                  </div>
-               </div>
-               <div class="slide slide-4">
-                  <div class="slide-content">
-                     <h2>Escape to Bandung</h2>
-                     <p>
-                        Enjoy the cool mountain climate and picturesque
-                        landscapes
-                     </p>
-                  </div>
-               </div>
+      <section id="home">
+         <div class="container-home">
+            <div class="hero">
+               <h1>Your Trusted Travel Agent's</h1>
+               <p>Your <span>happiness</span> is our happiness</p>
             </div>
-            <div class="navigation-dots">
-               <div class="dot active" data-slide="0"></div>
-               <div class="dot" data-slide="1"></div>
-               <div class="dot" data-slide="2"></div>
-               <div class="dot" data-slide="3"></div>
-            </div>
-         </div>
+            <br />
 
-         <div class="main-content">
-            <div class="left-column">
-               <div class="image-container">
-                  <div class="image-placeholder"></div>
-                  <div class="caption">
-                     Liburan jadi menyenangkan bersama Travel Agents!
-                  </div>
-               </div>
-
-               <div class="agent-info">
-                  <div class="agent-avatar">FH</div>
-                  <div class="agent-details">
-                     <h4>Florence Hughes</h4>
-                     <p>San Rafael, Oregon, CA</p>
-                  </div>
-               </div>
-
-               <div class="info-box">
-                  <p>
-                     Use this space to provide users with more information about
-                     your offer. Consider it a follow-up to your headline and
-                     explain the benefits of your service or product.
-                  </p>
-
-                  <div class="benefits">
-                     <div class="benefit-item">
-                        <div class="number">1</div>
-                        <div class="benefit-text">
-                           Your first feature, written in the form of a benefit
-                           statement.
-                        </div>
-                     </div>
-                     <div class="benefit-item">
-                        <div class="number">2</div>
-                        <div class="benefit-text">
-                           Your second feature, written in the form of a benefit
-                           statement.
-                        </div>
-                     </div>
-                     <div class="benefit-item">
-                        <div class="number">3</div>
-                        <div class="benefit-text">
-                           Your third feature, written in the form of a benefit
-                           statement.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div class="right-column">
-               <div class="contact-form">
-                  <h3>Contact Us</h3>
-                  <p>
-                     Jalan which road? nomor rumah 123 gang sebelah ditanyain
-                     dulu
-                  </p>
-
-                  <form id="contactForm">
-                     <div class="form-group" id="nameGroup">
-                        <label>Your Name:</label>
-                        <input
-                           type="text"
-                           id="name"
-                           placeholder="First and last name"
+            <!-- Banner Slider -->
+            <div class="banner-slider">
+               <div class="slides">
+                  <div class="slide slide-1">
+                     <div class="slide-content">
+                        <img
+                           src="assets/images/bali.jpg"
+                           alt="Bali landscape"
                         />
-                        <div class="error-message">
-                           Please enter your full name
+                        <div class="slide-text">
+                           <h2>Explore Bali</h2>
+                           <p>
+                              Experience the beauty and culture of Bali with our
+                              exclusive packages
+                           </p>
                         </div>
                      </div>
-                     <div class="form-group" id="emailGroup">
-                        <label>Email Address:</label>
-                        <input
-                           type="email"
-                           id="email"
-                           placeholder="example@domain.com"
+                  </div>
+                  <div class="slide slide-2">
+                     <div class="slide-content">
+                        <img
+                           src="assets/images/bandung.jpg"
+                           alt="Japan traditions"
                         />
-                        <div class="error-message">
-                           Please enter a valid email address
+                        <div class="slide-text">
+                           <h2>Discover Japan</h2>
+                           <p>
+                              Immerse yourself in the rich traditions and modern
+                              wonders of Japan
+                           </p>
                         </div>
                      </div>
-                     <div class="form-group" id="interestGroup">
-                        <label>What are you interested in?</label>
-                        <select id="interest">
-                           <option value="">Select option</option>
-                           <option value="bali">Bali</option>
-                           <option value="japan">Japan</option>
-                           <option value="singapore">Singapore</option>
-                           <option value="bandung">Bandung</option>
-                           <option value="surabaya">Surabaya</option>
-                        </select>
-                        <div class="error-message">Please select an option</div>
+                  </div>
+                  <div class="slide slide-3">
+                     <div class="slide-content">
+                        <img
+                           src="assets/images/singapore.jpg"
+                           alt="Singapore cityscape"
+                        />
+                        <div class="slide-text">
+                           <h2>Adventure in Singapore</h2>
+                           <p>
+                              Find the perfect balance of urban exploration and
+                              natural beauty
+                           </p>
+                        </div>
                      </div>
-                     <button type="submit" class="btn">SEND</button>
-                     <div class="form-success">
-                        Thank you for your message! We'll contact you soon.
+                  </div>
+                  <div class="slide slide-4">
+                     <div class="slide-content">
+                        <img
+                           src="assets/images/bandung.jpg"
+                           alt="Bandung mountains"
+                        />
+                        <div class="slide-text">
+                           <h2>Escape to Bandung</h2>
+                           <p>
+                              Enjoy the cool mountain climate and picturesque
+                              landscapes
+                           </p>
+                        </div>
                      </div>
-                  </form>
+                  </div>
+               </div>
+               <div class="navigation-dots">
+                  <div class="dot active" data-slide="0"></div>
+                  <div class="dot" data-slide="1"></div>
+                  <div class="dot" data-slide="2"></div>
+                  <div class="dot" data-slide="3"></div>
+               </div>
+               <div class="slider-arrows">
+                  <div class="arrow arrow-left">&#10094;</div>
+                  <div class="arrow arrow-right">&#10095;</div>
+               </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="main-content">
+               <div class="left-column">
+                  <div class="image-container">
+                     <img
+                        src="assets/images/travel.jpg"
+                        alt="Travel Agents"
+                        class="image-placeholder"
+                     />
+                  </div>
+
+                  <div class="agent-info">
+                     <div class="agent-avatar">RM</div>
+                     <div class="agent-details">
+                        <h4>Rama Wicaksono</h4>
+                        <p style="font-size: 19px; color: rgb(245, 10, 10);">
+                           There's a discount for early 2025 registration!
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="info-box">
+                     <p style="font-size: 16px;">
+                        Benefits of using our travel services:
+                     </p>
+
+                     <div class="benefits">
+                        <div class="benefit-item">
+                           <div class="number">1</div>
+                           <div class="benefit-text">
+                              Personalized travel planning tailored to your
+                              preferences and budget
+                           </div>
+                        </div>
+                        <div class="benefit-item">
+                           <div class="number">2</div>
+                           <div class="benefit-text">
+                              Access to exclusive deals and discounts not
+                              available to the general public
+                           </div>
+                        </div>
+                        <div class="benefit-item">
+                           <div class="number">3</div>
+                           <div class="benefit-text">
+                              Emergency assistance and rebooking support if
+                              travel disruptions occur
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="right-column">
+                  <div class="contact-form">
+                     <h3>Contact Us</h3>
+                     <p style="font-size: 16px;">
+                        You can contact us by filling in the following form:
+                     </p>
+
+                     <form id="contactForm">
+                        <div class="form-group" id="nameGroup">
+                           <label>Your Name:</label>
+                           <input
+                              type="text"
+                              id="name"
+                              placeholder="First and last name"
+                           />
+                           <div class="error-message">
+                              Please enter your full name
+                           </div>
+                        </div>
+                        <div class="form-group" id="emailGroup">
+                           <label>Email Address:</label>
+                           <input
+                              type="email"
+                              id="email"
+                              placeholder="example@domain.com"
+                           />
+                           <div class="error-message">
+                              Please enter a valid email address
+                           </div>
+                        </div>
+                        <div class="form-group" id="interestGroup">
+                           <label>What are you interested in?</label>
+                           <select id="interest">
+                              <option value="">Select option</option>
+                              <option value="bali">Bali</option>
+                              <option value="japan">Japan</option>
+                              <option value="singapore">Singapore</option>
+                              <option value="bandung">Bandung</option>
+                              <option value="surabaya">Surabaya</option>
+                           </select>
+                           <div class="error-message">
+                              Please select an option
+                           </div>
+                        </div>
+                        <button type="submit" class="btn">SEND</button>
+                        <div class="form-success">
+                           Thank you for your message! We'll contact you soon.
+                        </div>
+                     </form>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
+      </section>
 
-      <div class="packages">
-         <div class="container">
+      <section id="packages">
+         <div class="packages">
             <h2>Our Package</h2>
-            <div class="package-grid">
-               <div class="package-card">
-                  <div class="package-icon">✈️</div>
-                  <div class="package-title">Bali</div>
-                  <div class="package-description">
-                     Travel destination of Bali, lombok island (location not
-                     found). You can beach there.
+            <br />
+            <div class="container-packages">
+               <div class="package-grid">
+                  <div class="package-card">
+                     <div class="package-icon">✈️</div>
+                     <div class="package-title">Bali</div>
+                     <div class="package-description">
+                        Bali, Indonesia, is one of the world's top tourist
+                        destinations, known for its stunning beaches, lush rice
+                        terraces, vibrant culture, and spiritual atmosphere.
+                     </div>
                   </div>
-               </div>
-               <div class="package-card">
-                  <div class="package-icon">🗼</div>
-                  <div class="package-title">Japan</div>
-                  <div class="package-description">
-                     Travel destination of Japan. Lorem ipsum (location not
-                     found). You can temple there.
+                  <div class="package-card">
+                     <div class="package-icon">🗼</div>
+                     <div class="package-title">Japan</div>
+                     <div class="package-description">
+                        Japan is a top travel destination known for its rich
+                        history, unique culture, advanced technology, and
+                        breathtaking natural landscapes.
+                     </div>
                   </div>
-               </div>
-               <div class="package-card">
-                  <div class="package-icon">🌆</div>
-                  <div class="package-title">Singapore</div>
-                  <div class="package-description">
-                     This description suggests and reminds you to take parks.
+                  <div class="package-card">
+                     <div class="package-icon">🌆</div>
+                     <div class="package-title">Singapore</div>
+                     <div class="package-description">
+                        Singapore is a vibrant city-state known for its modern
+                        skyline, cultural diversity, lush gardens, and
+                        world-class attractions. Despite its small size, it
+                        offers a mix of futuristic experiences, rich history,
+                        and delicious food.
+                     </div>
                   </div>
-               </div>
-               <div class="package-card">
-                  <div class="package-icon">🏞️</div>
-                  <div class="package-title">Bandung</div>
-                  <div class="package-description">
-                     This description suggests and reminds you to take parks.
+                  <div class="package-card">
+                     <div class="package-icon">🏞️</div>
+                     <div class="package-title">Bandung</div>
+                     <div class="package-description">
+                        Bandung, known as the "Paris of Java," is a popular
+                        tourist destination in Indonesia. It offers a mix of
+                        cool mountain air, beautiful natural landscapes,
+                        colonial architecture, and a vibrant culinary scene.
+                     </div>
                   </div>
-               </div>
-               <div class="package-card">
-                  <div class="package-icon">🏙️</div>
-                  <div class="package-title">Surabaya</div>
-                  <div class="package-description">
-                     This description suggests and reminds you to take above.
+                  <div class="package-card">
+                     <div class="package-icon">🏙️</div>
+                     <div class="package-title">Surabaya</div>
+                     <div class="package-description">
+                        Surabaya, Indonesia’s second-largest city, is a vibrant
+                        metropolis known for its rich history, cultural
+                        diversity, and modern urban attractions. It serves as a
+                        gateway to East Java’s natural wonders, including Mount
+                        Bromo and Ijen Crater.
+                     </div>
                   </div>
-               </div>
-               <div class="package-card">
-                  <div class="package-icon">🌟</div>
-                  <div class="package-title">Third Feature</div>
-                  <div class="package-description">
-                     This description suggests and reminds you to take above.
+                  <div class="package-card">
+                     <div class="package-icon">🌟</div>
+                     <div class="package-title">Bundle Package 6</div>
+                     <div class="package-description">
+                        "Exclusive Deal!✨ Book our special Bundle Package and
+                        enjoy an amazing discount of up to 20%! 🎉 Get the best
+                        value for your trip with our all-in-one package,
+                        including flights, hotels, and exciting activities.
+                        Don't miss out—limited time offer!" 📅 Book now and save
+                        more! 🚀✈️
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
+      </section>
+      <br />
 
-      <div class="closing">
-         <div class="container">
-            <h2>Your Closing Argument Headline</h2>
-            <p>
-               Suspendisse egetas Florence drive to Manhattan-Avenue, lorem
-               ipsum indolent and patirubam. Gravitas, minabdu cloads. Possible,
-               brights odds cat urgg, Finglish.
-            </p>
-            <button class="cta-btn">CALL TO ACTION</button>
+      <section id="call-action">
+         <div class="closing">
+            <div class="container-action">
+               <h2>Feedback</h2>
+               <p>
+                  We truly appreciate your support and trust in our travel
+                  agency. Your feedback is very important to us! We would love
+                  to hear your thoughts, suggestions, or any constructive
+                  criticism about our services. Please take a moment to share
+                  your experience with us. Your input will help us improve and
+                  serve you better in the future. Thank you for being a part of
+                  our journey!
+               </p>
+               <br />
+               <button class="cta-btn">Feedback Form</button>
+            </div>
          </div>
-      </div>
+      </section>
+      <hr width="1px" />
 
       <footer>
          <div class="container">
-            <div class="footer-logo">matapsa</div>
+            <div class="footer-logo">Traveloka</div>
             <div class="footer-links">
                <a href="#">Terms of Service</a>
                <a href="#">Privacy Policy</a>
-               <span>© 2019 - Matapsa</span>
+               <span>© 2025 - Muhammad Rama Wicaksono</span>
             </div>
          </div>
       </footer>
